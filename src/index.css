@@ -1,6 +1,51 @@
+@import '@carbon/react/scss/index.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Carbon Design System and custom styles */
+body {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  background-color: var(--cds-background);
+}
+
+.data-upload-area {
+  border: 2px dashed var(--cds-border-subtle);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: border-color 0.2s ease;
+}
+
+.data-upload-area:hover {
+  border-color: var(--cds-border-interactive);
+}
+
+.query-section {
+  background: var(--cds-layer-01);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.results-section {
+  background: var(--cds-layer-01);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.chart-container {
+  background: var(--cds-layer-02);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
